@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base tweaks */
+@layer base {
+  html { @apply h-full; }
+  body { @apply min-h-full font-sans antialiased text-gray-800 bg-white; }
+  a { @apply text-gray-800 hover:text-black; }
+}
+
+/* Focus styles for accessibility */
+*:focus-visible { @apply outline-2 outline-offset-2 outline-gray-900; }
